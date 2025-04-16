@@ -1,0 +1,82 @@
+[
+    {
+      "Item No.": 1,
+      "Anomaly ID": "3SWBT-AN-CR-LBHD-001",
+      "Diminution (mm)": 2.2,
+      "X": 15.346,
+      "Y": -1.565,
+      "Z": 2.1121
+    },
+    {
+      "Item No.": 2,
+      "Anomaly ID": "3SWBT-AN-CR-LBHD-002",
+      "Diminution (mm)": 2.5,
+      "X": 15.32,
+      "Y": -1.565,
+      "Z": 2.0321
+    },
+    {
+      "Item No.": 3,
+      "Anomaly ID": "3SWBT-AN-CR-LBHD-003",
+      "Diminution (mm)": 2.6,
+      "X": 15.069,
+      "Y": -1.565,
+      "Z": 1.7921
+    },
+    {
+      "Item No.": 4,
+      "Anomaly ID": "3SWBT-AN-CR-LBHD-004",
+      "Diminution (mm)": 2.3,
+      "X": 15.16,
+      "Y": -1.565,
+      "Z": 1.7921
+    },
+    {
+      "Item No.": 5,
+      "Anomaly ID": "3SWBT-AN-CR-LBHD-005",
+      "Diminution (mm)": 2.2,
+      "X": 15.187,
+      "Y": -1.565,
+      "Z": 1.7921
+    },
+    {
+      "Item No.": 6,
+      "Anomaly ID": "3SWBT-AN-CR-LBHD-006",
+      "Diminution (mm)": 2.2,
+      "X": 15.242,
+      "Y": -1.565,
+      "Z": 1.7921
+    },
+    {
+      "Item No.": 7,
+      "Anomaly ID": "3SWBT-AN-CR-LBHD-007",
+      "Diminution (mm)": 2.1,
+      "X": 15.336,
+      "Y": -1.565,
+      "Z": 1.7921
+    },
+    {
+      "Item No.": 8,
+      "Anomaly ID": "3SWBT-AN-CR-LBHD-008",
+      "Diminution (mm)": null,
+      "X": 15.083,
+      "Y": -1.565,
+      "Z": 1.7121
+    },
+    {
+      "Item No.": 9,
+      "Anomaly ID": "3SWBT-AN-CR-LBHD-009",
+      "Diminution (mm)": 1.9,
+      "X": 15.184,
+      "Y": -1.565,
+      "Z": 1.6221
+    },
+    {
+      "Item No.": 10,
+      "Anomaly ID": "3SWBT-AN-CR-LBHD-010",
+      "Diminution (mm)": 1.4,
+      "X": 14.93,
+      "Y": -1.565,
+      "Z": 1.5221
+    }
+   ]
