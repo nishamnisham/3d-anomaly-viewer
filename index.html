@@ -39,10 +39,10 @@ const light = new THREE.AmbientLight(0xffffff, 0.8);
 scene.add(light);
 
 // Load your structure.glb model
-const loader = new GLTFLoader();
-loader.load('structure.glb', function(gltf) {
-    scene.add(gltf.scene);
-});
+// const loader = new GLTFLoader();
+// loader.load('structure.glb', function(gltf) {
+//    scene.add(gltf.scene);
+//});
 
 // Load anomaly data and place spheres
 fetch('anomalies.json')
