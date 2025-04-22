@@ -1,36 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Red Sphere</title>
-  <style>
-    body { margin: 0; overflow: hidden; }
-    canvas { display: block; }
-  </style>
-</head>
-<body>
 <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/examples/js/controls/OrbitControls.js"></script>
 <script>
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x1a1a1a);
 
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
-  camera.position.z = 5;
+  camera.position.set(5, 5, 10);
 
   const renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
 
   const controls = new THREE.OrbitControls(camera, renderer.domElement);
+  controls.update();
 
-  const light = new THREE.AmbientLight(0xffffff, 0.8);
-  scene.add(light);
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+  scene.add(ambientLight);
 
-  const sphereGeometry = new THREE.SphereGeometry(1, 32, 32);
-  const sphereMaterial = new THREE.MeshStandardMaterial({ color: 0xff0000 });
-  const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-  scene.add(sphere);
+  const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+  directionalLight.position.set(10, 10, 10);
+  scene.add(directionalLight);
+
+  // 🔽 Load your GLB model
+  const loader = new THREE.GLTFLoader();
+  loader.load('structure.glb', function(gltf) {
+    scene.add(gltf.scene);
+    console.log("GLB loaded successfully");
+  }, undefined, function(error) {
+    console.error("Error loading GLB:", error);
+  });
 
   function animate() {
     requestAnimationFrame(animate);
@@ -46,5 +45,3 @@
     renderer.setSize(window.innerWidth, window.innerHeight);
   });
 </script>
-</body>
-</html>
